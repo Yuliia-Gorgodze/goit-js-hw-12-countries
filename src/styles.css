@@ -1,0 +1,35 @@
+.inputConteiner{
+  
+   margin-top: 50px;
+}
+.input{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 30px;
+
+}
+.titleCountry{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 10px;
+}
+.flag{
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+}
+.conuntryContainer_js{
+    display: flex;
+    justify-content: center;
+}
+.textCountry{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.headingContry{
+   font-size: 40px;
+   margin-bottom: 10px;
+}
