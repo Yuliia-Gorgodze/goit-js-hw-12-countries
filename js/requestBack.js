@@ -1,11 +1,17 @@
+// import refs from './refs'
 
-
-function countryBack() {
-    const name = nameCountry();
-    fetch(`https://restcountries.eu/rest/v2/name/${name}`)
-      .then(response => {
-        return response.json();
-      })
-    }
+// function countryBack(name) {
+//    console.log(name)
+//     fetch(`https://restcountries.eu/rest/v2/name/ukraine`)
+//       .then(response => {
+//        response.json();
+//       })
+//     }
       
-    export default {countryBack}
+
+function countryBack(name) {
+
+  return fetch(`https://restcountries.eu/rest/v2/name/${name}`)
+     .then(response => response.json())
+   }
+  export default countryBack
