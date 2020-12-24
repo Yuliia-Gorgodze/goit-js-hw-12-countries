@@ -11,19 +11,19 @@ refs.input.addEventListener('input', debounce(onSearch, 500));
 function onSearch() {
   refs.list.innerHTML = '';
   refs.containerCountry.innerHTML = '';
-  errorMessege()
+  getCountries()
 }
-function errorMessege () {
+function getCountries () {
   const nameInput = refs.input.value;
   console.log(nameInput)
   if (nameInput === '') {
     errorRef.errorSintaxsisError();
     return;
   }
-  countryBack(nameInput).then(countryCard).catch(errorRef.errorNotFound());
+  countryBack(nameInput).then(countryCard).catch(errorRef.errorNotFound);
 }
 function countryCard(nameCountry) {
-  if (nameCountry.length > 1 && nameCountry.length < 10) {
+  if (nameCountry.length > 1 && nameCountry.length <= 10) {
     nameCountry.map(c =>
       refs.list.insertAdjacentHTML('afterbegin', listNameCountry(c)),
     );

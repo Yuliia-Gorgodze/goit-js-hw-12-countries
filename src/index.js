@@ -6,8 +6,3 @@ import cardCountry from "../js/cardCountry"
 
 
 
-
-
-
-
-
